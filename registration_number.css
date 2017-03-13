@@ -1,0 +1,40 @@
+h1 {
+  text-align: center;
+  border: solid;
+  border-radius: 16px;
+  font-size: 50px;
+  color: #b5b500;
+  background-color: black;
+}
+.textBoxbutt {
+  text-align: center;
+}
+button {
+  border: solid;
+  border-radius: 12px;
+  font-size: 2em;
+  color: #b5b500;
+  background-color: black;
+}
+input {
+  border-radius: 12px;
+  font-size: 2em;
+  color: black;
+  background-color: silver;
+}
+body {
+  background-image: url("/home/bootcamp/projects/registration_numbers/images/plate.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+li {
+  border: solid;
+  color: #b5b500;
+  font-size: 2em;
+  background-color: black;
+  list-style: none;
+  border-radius: 15px;
+  width: 6em;
+  margin-left: 13em;
+  border-width: 3px;
+}
