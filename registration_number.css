@@ -38,3 +38,6 @@ li {
   margin-left: 13em;
   border-width: 3px;
 }
+fieldset {
+  border-radius: 1em;
+}

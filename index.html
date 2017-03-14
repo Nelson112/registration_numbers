@@ -6,20 +6,25 @@
   <title>Registration Number</title>
   <link rel="stylesheet" href="registration_number.css">
 </head>
-
+<fieldset>
 <body>
-  <h1>Registration Numbers</h1>
+  <legend><h1>Registration Numbers</h1></legend>
 
 
   <div class="textBoxbutt">
 
     <input id="regNo" type="text" placeholder="Type registration number..."> </input>
-    <button type="button" name="add" onclick="regFunc()">Add</button>
+    <button id="btn" type="button" name="add" >Add</button>
 
   </div>
-  <ul id="outputReg"></ul>
+  </fieldset>
+  <ul id="outputReg">
+    <li class="sample">CA 123-358</li>
+  </ul>
 
-  <script src="registration_number.js" charset="utf-8"></script>
+<script src="registration_number.js" charset="utf-8"></script>
+
+
 </body>
 
 </html>
