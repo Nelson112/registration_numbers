@@ -26,6 +26,7 @@ body {
   background-image: url("/home/bootcamp/projects/registration_numbers/images/plate.jpg");
   background-repeat: no-repeat;
   background-size: cover;
+  text-align: center;
 }
 li {
   border: solid;
@@ -36,8 +37,25 @@ li {
   border-radius: 15px;
   width: 6em;
   margin-left: 13em;
-  border-width: 3px;
+ border-width: 3px;
+  text-transform: uppercase;
 }
 fieldset {
   border-radius: 1em;
+}
+#dDown {
+  border: solid;
+  border-radius: 12px;
+  font-size: 2em;
+  color: #b5b500;
+  background-color: black;
+  width: auto;
+}
+.sample {
+  text-align: center;
+  margin-left: 14em;
+}
+
+.hidden{
+  display: none;
 }

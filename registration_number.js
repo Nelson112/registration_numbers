@@ -1,43 +1,36 @@
-const textInput = document.querySelector('#regNo');
-const addBtn = document.querySelector('#btn');
-const textOutput = document.querySelector('#outputReg');
-// const newReg = document.createElement('li');
-// const newReg = document.querySelector('.sample').cloneNode();
-// console.log(newReg);
-addBtn.addEventListener("click",function(){
-  const newReg = document.querySelector('.sample').cloneNode();
-  newReg.innerHTML = textInput.value;
-  textOutput.appendChild(newReg);
-  textInput.value = "";
+var storeList = [];
+var textInput = document.querySelector('#regNo');
+var addBtn = document.querySelector('#btn');
+var textOutput = document.querySelector('#outputReg');
+var dropDown = document.querySelector('#dDown');
+addBtn.addEventListener("click", function() {
+  if (textInput.value.length > 0) {
 
-  return
+    var newReg = document.createElement('li');
+    newReg.classList.add('sample');
+    newReg.innerHTML = textInput.value;
+    textOutput.appendChild(newReg);
+    textInput.value = "";
+    //console.log(newReg);
+    return;
+  }
 });
+dropDown.addEventListener("change", function() {
+  var selectedTown = dropDown.options[dropDown.selectedIndex].value;
+  //alert(selectedTown);
 
+  var items = document.querySelectorAll('.sample')
 
-
-/*
-
-// var regStore = {};
-
-var text = document.getElementById('regNo')
-var regNumber = document.createElement("li")
-var outputReg = document.getElementById('outputReg');
-
-function regFunc() {
-
-  // if (regStore[regNo.value] === undefined) {
-  //
-  //   regStore[regNo.value] = true;
-  // } else if (regStore[regNo.value] !== undefined) {
-  //   regStore[regNo.value] = " ";
-  // }
-
-   outputReg.appendChild(regNumber)
-
-  regNumber.textContent = regNo.value;
-  // emtying the textbox
-  document.getElementById("regNo").value = "";
-
-  return;
+  for(var i=0;i<items.length;i++){
+    var nrPlate = items[i];
+    nrPlate.classList.remove('hidden');
+  }
+  if(selectedTown !== 'All'){
+  for(var i=0;i<items.length;i++){
+    var nrPlate = items[i];
+    if (!nrPlate.innerHTML.startsWith(selectedTown)) {
+      nrPlate.classList.add('hidden');
+    }
+  }
 }
- */
+});

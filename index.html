@@ -7,20 +7,30 @@
   <link rel="stylesheet" href="registration_number.css">
 </head>
 <fieldset>
-<body>
-  <legend><h1>Registration Numbers</h1></legend>
+
+  <body>
+    <legend>
+      <h1>Registration Numbers</h1></legend>
 
 
-  <div class="textBoxbutt">
+    <div class="textBoxbutt">
 
-    <input id="regNo" type="text" placeholder="Type registration number..."> </input>
-    <button id="btn" type="button" name="add" >Add</button>
+      <input id="regNo" type="text" placeholder="Type registration number..."> </input>
+      <button id="btn" type="button" name="add">Add</button>
 
-  </div>
-  </fieldset>
-  <ul id="outputReg">
-    <li class="sample">CA 123-358</li>
-  </ul>
+      <div class="selector">
+        <select id="dDown" name="dropDown">
+          <option id="all" value="All">All</option>
+          <option id="CY" value="CY">Bellville</option>
+          <option id="CA" value="CA">Cape Town</option>
+          <option id="CEY" value="CEY">Strand</option>
+        </select>
+      </div>
+
+    </div>
+</fieldset>
+<ul id="outputReg">
+</ul>
 
 <script src="registration_number.js" charset="utf-8"></script>
 
