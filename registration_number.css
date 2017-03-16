@@ -21,6 +21,7 @@ input {
   font-size: 2em;
   color: black;
   background-color: silver;
+  text-transform: uppercase;
 }
 body {
   background-image: url("/home/bootcamp/projects/registration_numbers/images/plate.jpg");
